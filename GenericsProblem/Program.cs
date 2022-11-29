@@ -13,7 +13,7 @@ namespace GenericsProblem
             FindMaximum Number = new FindMaximum();
             Console.WriteLine("Welcome to the Generics Problem : ");
             Console.WriteLine("Please choose the option in below");
-            Console.WriteLine("1:- Find Maximum Number\n" + "2:- Find Maximum Using Generics\n" + "3:- Find max using Generics Class");
+            Console.WriteLine("1:- Find Maximum Number\n" + "2:- Find Maximum Using Generics\n" + "3:- Find max using Generics Class\n" + "4:- Find Maximum Params");
 
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -34,6 +34,11 @@ namespace GenericsProblem
                     new FindMaxGenericsClass<int>(20, 40, 50).TestMaximum();
                     new FindMaxGenericsClass<float>(20.5f, 10.3f, 11.3f).TestMaximum();
                     new FindMaxGenericsClass<string>("Apple", "Peach", "Banana").TestMaximum();
+                    break;
+
+                case 4:
+                    FindMaxParams.MaxValue(45, 23, 54, 6, 23, 43);
+                    FindMaxParams.MaxValue(45, 6, 23, 43);
                     break;
 
 
